@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets//favicon.png" type="image/x-icon">
+    <!-- Google Font Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+    <title>Salinaka | Home</title>
+</head>
+
+<body>
+    <!-- Navbar section start-->
+    <nav class="navbar__section">
+        <div class="nav__logo-box">
+            <a href="/index.html" class="nav__logo">
+                <img src="../assets/logo-full.png" alt="logo">
+            </a>
+        </div>
+        <ul class="nav__items">
+            <li class="nav__link"><a href="/index.html" class="active">Home</a></li>
+            <li class="nav__link"><a href="/pages/shop.html">Shop</a></li>
+            <li class="nav__link"><a href="/pages/featured.html">Featured</a></li>
+            <li class="nav__link"><a href="/pages/recommended.html">Recommended</a></li>
+        </ul>
+        <div class="nav__search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="nav-search" id="nav-search" placeholder="Search product...">
+        </div>
+        <div class="nav__cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="badge-count"></span>
+        </div>
+        <div class="nav__auth">
+            
+        </div>
+    </nav>
+
+    <!-- Navbar section end-->
+    <div class="basket">
+        <div class="basket__header">
+            <h3 class="basket__header-title">My Basket
+                <span class="basket__item-count">(0 item)</span>
+            </h3>
+            <button class="basket__close-btn btn button__border-gray" type="button">Close</button>
+            <button class="basket__clear-btn btn button__border-gray" type="button"><span>Clear
+                    Basket</span></button>
+        </div>
+        <div class="basket__empty">
+            <h5>There is no item on the basket.</h5>
+        </div>
+        <div class="basket__list"></div>
+        <div class="basket__checkout">
+            <div class="basket__total">
+                <p class="basket__total-tile">Subtotal Amount:</p>
+                <span class="basket__total-amount">$173</span>
+            </div>
+            <button class="btn">Check Out</button>
+        </div>
+    </div>
+    <!-- Main section -->
+    <main class="content">
+        <section class="banner__section">
+            <div class="banner__desc">
+                <h1 class="thin-text">
+                    <strong>See</strong> everything with <strong>Clarity</strong>
+                </h1>
+                <p>Buying eye wear should leave you happy and good-looking, with money in your pocket. Glasses,
+                    sunglasses, and contacts—we’ve got your eyes covered.</p>
+                <br>
+                <a href="../pages/shop.html" class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="banner__image">
+                <img src="../assets/banner.jpg" alt="banner">
+            </div>
+        </section>
+        <section class="products__section">
+            <div class="products__header">
+                <h2>Featured Products</h2>
+                <a href="../pages/featured.html" class="products__see-all">See all</a>
+            </div>
+            <div class="products__details" id="featured">
+
+            </div>
+        </section>
+        <section class="products__section">
+            <div class="products__header">
+                <h2>Recommended Products</h2>
+                <a href="../pages/recommended.html" class="products__see-all">See all</a>
+            </div>
+            <div class="products__details" id="recommended">
+
+            </div>
+        </section>
+    </main>
+    <!-- Main section -->
+    <!-- Footer section start-->
+    <footer id="footer" class="footer__section">
+        <div class="footer__developer">
+            <strong>Developed by <a class="footer__developer-name" href="https://github.com/jgudo"
+                    target="_blank">JULIUS
+                    GUEVARRA</a></strong>
+        </div>
+        <div class="footer__rights">
+            <img src="../assets/logo-full.png" alt="logo" class="footer__rights-logo">
+            <h4>&copy; <span class="footer__rights-year">2023</span></h4>
+        </div>
+        <div class="footer__fork">
+            <strong class="footer__fork-project">Fork this project &nbsp;<a class="footer__fork-link"
+                    href="https://github.com/jgudo/ecommerce-react" target="_blank">HERE</a></strong>
+        </div>
+    </footer>
+    <!-- Footer section end-->
+    <!-- Js Script file -->
+    <script type="module" src="../index.js"></script>
+</body>
+
+</html>

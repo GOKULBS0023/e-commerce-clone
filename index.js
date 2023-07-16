@@ -648,7 +648,6 @@ const showBasketItems = () => {
   }
 };
 const checkOutTotal = () => {
-  console.log("Total");
   const totalAmount = basketItems.reduce((accumulator, item) => {
     return accumulator + item.totalPrice;
   }, 0);
@@ -756,7 +755,6 @@ searchBarEl.addEventListener("onclick", () => {
 });
 searchBarEl.addEventListener("keyup", () => {
   let input = searchBarEl.value;
-  console.log(input);
   if (pageName !== "shop.html") {
     localStorage.setItem("searchInputValue", input);
     window.location.href = "shop.html";
@@ -866,7 +864,6 @@ checkOutTotal();
 let isSigned = false;
 isSigned = localStorage.getItem("signed");
 
-// console.log(isSigned);
 
 const showAuthentication = () => {
   const authEl = document.querySelector(".nav__auth");
@@ -989,7 +986,6 @@ if (pageName === "signup.html") {
         const credential = GoogleAuthProvider.credentialFromResult(result);
         const token = credential.accessToken;
         const user = result.user;
-        console.log("Success");
       })
       .catch((error) => {
         const errorCode = error.code;
